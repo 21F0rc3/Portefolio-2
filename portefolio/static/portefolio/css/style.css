@@ -1,0 +1,374 @@
+.border-radius-50 {
+    border-radius: 50%;
+  }
+  
+  .form-control {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ced4da;
+  }
+  
+  .form-control:focus {
+    border-color: none;
+    box-shadow: none;
+  }
+  
+  #floatingMensagem {
+    height: 204px;
+    resize: none;
+  }
+  
+  #front-page-background {
+    height: 110%;
+    width: 110%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    background: url(/static/images/required/background.jpg) no-repeat center / cover;
+  }
+  
+  a {
+    text-decoration: none;
+    color: currentColor;
+  }
+  
+  .Abril-Fatface-Font {
+    font-family: 'Abril Fatface', cursive;
+  }
+  
+  .Bebas-Neue-Font {
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+  .Playfair-Display-SC-Font {
+    font-family: 'Playfair Display SC', serif;
+  }
+  
+  .work {
+    position: relative;
+  }
+  
+  .work-logo {
+    display: block;
+    width: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .work:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .work-text {
+    white-space: nowrap;
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  .primary-color {
+    background-color: #F5F6F4;
+  }
+  
+  .secondary-color {
+    background-color: #0E3B43;
+  }
+  
+  .terciary-color {
+    background-color: #20241E;
+  }
+  
+  .fourth-color {
+    background-color: #357266;
+  }
+  
+  svg.fourth-color {
+    background-color: transparent;
+    fill: #357266;
+  }
+  
+  .fifth-color {
+    background-color: #5A7D7C;
+  }
+  
+  .sixth-color {
+    background-color: #A71D31;
+  }
+  
+  .seventh-color {
+    background-color: rgba(255, 255, 255, 0.616);
+  }
+  
+  svg.seventh-color {
+    background-color: transparent;
+    fill: #ffffff9d;
+  }
+  
+  #work-title {
+    font-size: 1rem;  
+  }
+  
+  #work-description {
+    font-size: 0.75rem;
+  }
+  
+  #work-keywords {
+    font-size: 0.75rem;
+  }
+  
+  #btn-contact-me {
+    background-color: #5A7D7C;
+  }
+  
+  .project-page-title {
+    font-size: 8vw;
+    font-family: 'Abril Fatface', cursive;
+  }
+  
+  #front-page {
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #front-page h1 {
+    font-size: 4rem;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    #front-page h1 {
+      font-size: 5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    #front-page h1 {
+      font-size: 7rem;
+    }
+  }
+  
+  @media only screen and (max-height: 500px) {
+    #front-page-avatar {
+      width: 16.66%;
+    }
+  
+    #front-page h1 {
+      font-size: 4rem;
+    }
+  }
+  
+  #front-page-avatar {
+    filter: grayscale(50%);
+  }
+  
+  #front-page *.seventh-color {
+    background-color: transparent;
+    color: #ffffff9d;
+  }
+  
+  .btn.terciary-color {
+    color: #ECEBE4;
+  }
+  
+  .btn.secondary-color {
+    border: 1px solid black;
+  }
+  
+  .btn:hover {
+    filter: brightness(85%);
+  }
+  
+  .btn:focus, .btn:active, .btn:hover{
+    box-shadow: none!important;
+    outline: 0;
+  }
+  
+  #sliding-text {
+    position: relative;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 9s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  
+  #front-page-image > img {
+    filter: grayscale(50%);
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* ============ HIDE TOP BAR ============ */
+  .goog-te-banner-frame.skiptranslate {display: none!important;}
+  body {top: 0px!important;}
+  
+  .translate-dropdown ul {
+    min-width: max-content;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 10;
+    color: rgb(153, 153, 153);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 100;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .translate-dropdown ul>li:hover {
+    background-color: rgba(255, 255, 255, 0.616)!important;
+  }
+  
+  #translateFrontPage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+  }
+  
+  .translate-dropdown > button {
+    color: rgb(153, 153, 153);
+  }
+  
+  #translateFrontPage > button:hover {
+    color: rgb(153, 153, 153);
+  }
+  
+  .translate-dropdown > ul img {
+    height: 2rem;
+  }
+  
+  .translate-dropdown > div img {
+    height: inherit;
+    padding: 10px;
+  }
+  
+  .translate-dropdown a::after {
+    animation: line-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) both;
+  }
+  
+  #line-container {
+    position: fixed;
+    top: 10vh;
+    z-index: 100;
+  }
+  
+  .line {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 0%;
+    height: 0px;
+    align-items: center;
+    font-size: 0;
+  }
+  
+  .line img {
+    height: inherit;
+    padding: 10px;
+  }
+  
+  .line > div {
+    height: -webkit-fill-available;
+  }
+  
+  .lineAnimation {
+    animation-name: line;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate
+  }
+  
+  @keyframes line {
+    0% {
+      width: 0%;
+      height: 60px;
+      font-size: 0;
+    }
+  
+    20% {
+      width: 0%;
+    }
+  
+    45% {
+      width: 100%;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      font-size: 0;
+    }
+  
+    70% {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      font-size: 100%;
+    }
+  
+    100% {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      width: 100%;
+      height: 60px;
+      font-size: 100%;
+    }
+  }
+  
+  #projectNavbar {
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  section p {
+    font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 20px;
+    letter-spacing: -0.003em;
+    line-height: 32px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  section h1 {
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.016em;
+    font-weight: 700;
+  }
