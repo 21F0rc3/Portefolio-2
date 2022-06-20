@@ -1,0 +1,16 @@
+<table class="col-12">
+    <tr>
+      {% for header in tables.table_headers %}
+        <th>{{ header }}</th>
+      {% endfor %}
+      <th>Delete</th>
+    </tr>
+    {% for row in tables.table_content %}
+    <tr>
+        {% for columns in row %}
+        <td contenteditable="true" oninput="editRow(this, {{ tables.table_headers }})">{{ columns }}</td>
+        {% endfor %}
+        <td><a href="{{ url_for('deleteRoute', table=model, id=row[0]) }}">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
