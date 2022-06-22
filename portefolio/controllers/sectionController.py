@@ -1,5 +1,3 @@
-from controllers.controllerImports import *
-
 """
     Cria uma nova secção na base de dados
 """

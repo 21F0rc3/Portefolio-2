@@ -1,5 +1,3 @@
-from controllers.controllerImports import *
-
 """
     Retorna a pagina do projeto com seu conteudo populado dinamicamente
 """

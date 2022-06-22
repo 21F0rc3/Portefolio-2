@@ -5,8 +5,6 @@ from django.template import loader
 
 from .models import Project
 
-from controllers.fileController import *
-
 # Create your views here.
 def index(request):
     template = loader.get_template('portefolio/index.html')

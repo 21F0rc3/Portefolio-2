@@ -1,5 +1,3 @@
-from controllers.controllerImports import *
-
 """
     Cria uma imagem na base de dados e insere no diretorio de imagens
 """
