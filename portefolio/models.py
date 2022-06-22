@@ -16,5 +16,10 @@ class Project(models.Model):
         return self.name
 
 class File(models.Model):
-    filename = models.CharField(max_length=200, unique=True, null=False)
+    file = models.FileField(upload_to='files')
 
+class Section(models.Model):
+    title = models.CharField(max_length=50)
+    image_file = models.OneToOneField(Image, on_delete=models.SET_NULL, null=True)
+    content_file = models.OneToOneField(File, on_delete=models.SET_NULL, null=True)
+    project = models.OneToOneField(Project, on_delete=models.SET_NULL, null=True)
