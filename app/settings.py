@@ -32,6 +32,10 @@ ALLOWED_HOSTS = [
     '127.0.0.1'
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'sheltered-bastion-64341.herokuapp.com'
+]
+
 
 # Application definition
 
