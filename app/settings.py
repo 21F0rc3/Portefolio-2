@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'sheltered-bastion-64341.herokuapp.com'
+    'https://sheltered-bastion-64341.herokuapp.com'
 ]
 
 
