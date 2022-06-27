@@ -20,23 +20,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dx9z&=abfi6^3_g=9ia^0ypw1ixfc_hct-8rx2gqd)$46nv2r8'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = [
-    '0.0.0.0',
-    'sheltered-bastion-64341.herokuapp.com',
-    '127.0.0.1'
-]
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://sheltered-bastion-64341.herokuapp.com'
-]
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -78,15 +61,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'app.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-DATABASES = {
-    'default': dj_database_url.config()
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
